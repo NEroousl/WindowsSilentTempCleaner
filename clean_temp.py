@@ -1,8 +1,8 @@
 import os
 import shutil
 import getpass
-from win10toast import ToastNotifier
-import time
+# from win10toast import ToastNotifier
+# import time
 
 def clean_directory(path):
     if not os.path.exists(path):
@@ -29,9 +29,9 @@ def main():
         clean_directory(path)
 
     # Show Windows notification
-    toaster = ToastNotifier()
-    toaster.show_toast("Cleaner", "System cleanup complete.", duration=5, threaded=True)
-    # time.sleep(6)   Ensure the script stays alive for the toast to show
+    # toaster = ToastNotifier()
+    # toaster.show_toast("Cleaner", "System cleanup complete.", duration=5, threaded=True)
+    # time.sleep(6)   # Ensure the script stays alive for the toast to show
 
 
 if __name__ == "__main__":
